@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		C008F1B11FBC95F2009FD83C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C008F1B01FBC95F2009FD83C /* AppDelegate.swift */; };
-		C008F1B31FBC95F2009FD83C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C008F1B21FBC95F2009FD83C /* ViewController.swift */; };
 		C008F1B61FBC95F2009FD83C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C008F1B41FBC95F2009FD83C /* Main.storyboard */; };
 		C008F1B81FBC95F2009FD83C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C008F1B71FBC95F2009FD83C /* Assets.xcassets */; };
 		C008F1BB1FBC95F2009FD83C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C008F1B91FBC95F2009FD83C /* LaunchScreen.storyboard */; };
 		C008F1C61FBC95F2009FD83C /* Lecture7ScrollViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C008F1C51FBC95F2009FD83C /* Lecture7ScrollViewTests.swift */; };
 		C008F1D11FBC95F2009FD83C /* Lecture7ScrollViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C008F1D01FBC95F2009FD83C /* Lecture7ScrollViewUITests.swift */; };
+		C008F1E21FBC9B87009FD83C /* DemoUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = C008F1E11FBC9B87009FD83C /* DemoUrl.swift */; };
+		C008F1E41FBCA496009FD83C /* MyImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C008F1E31FBCA496009FD83C /* MyImageViewController.swift */; };
+		C008F1E61FBCB966009FD83C /* CassniViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C008F1E51FBCB966009FD83C /* CassniViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		C008F1AD1FBC95F2009FD83C /* Lecture7ScrollView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Lecture7ScrollView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C008F1B01FBC95F2009FD83C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C008F1B21FBC95F2009FD83C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		C008F1B51FBC95F2009FD83C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C008F1B71FBC95F2009FD83C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C008F1BA1FBC95F2009FD83C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +48,9 @@
 		C008F1CC1FBC95F2009FD83C /* Lecture7ScrollViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Lecture7ScrollViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C008F1D01FBC95F2009FD83C /* Lecture7ScrollViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lecture7ScrollViewUITests.swift; sourceTree = "<group>"; };
 		C008F1D21FBC95F2009FD83C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C008F1E11FBC9B87009FD83C /* DemoUrl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoUrl.swift; sourceTree = "<group>"; };
+		C008F1E31FBCA496009FD83C /* MyImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyImageViewController.swift; sourceTree = "<group>"; };
+		C008F1E51FBCB966009FD83C /* CassniViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CassniViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +101,12 @@
 		C008F1AF1FBC95F2009FD83C /* Lecture7ScrollView */ = {
 			isa = PBXGroup;
 			children = (
-				C008F1B01FBC95F2009FD83C /* AppDelegate.swift */,
-				C008F1B21FBC95F2009FD83C /* ViewController.swift */,
+				C008F1E51FBCB966009FD83C /* CassniViewController.swift */,
+				C008F1E31FBCA496009FD83C /* MyImageViewController.swift */,
 				C008F1B41FBC95F2009FD83C /* Main.storyboard */,
-				C008F1B71FBC95F2009FD83C /* Assets.xcassets */,
-				C008F1B91FBC95F2009FD83C /* LaunchScreen.storyboard */,
+				C008F1E11FBC9B87009FD83C /* DemoUrl.swift */,
 				C008F1BC1FBC95F2009FD83C /* Info.plist */,
+				C008F1DE1FBC980D009FD83C /* Supporting File */,
 			);
 			path = Lecture7ScrollView;
 			sourceTree = "<group>";
@@ -123,6 +127,16 @@
 				C008F1D21FBC95F2009FD83C /* Info.plist */,
 			);
 			path = Lecture7ScrollViewUITests;
+			sourceTree = "<group>";
+		};
+		C008F1DE1FBC980D009FD83C /* Supporting File */ = {
+			isa = PBXGroup;
+			children = (
+				C008F1B01FBC95F2009FD83C /* AppDelegate.swift */,
+				C008F1B71FBC95F2009FD83C /* Assets.xcassets */,
+				C008F1B91FBC95F2009FD83C /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting File";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +273,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C008F1B31FBC95F2009FD83C /* ViewController.swift in Sources */,
+				C008F1E21FBC9B87009FD83C /* DemoUrl.swift in Sources */,
+				C008F1E61FBCB966009FD83C /* CassniViewController.swift in Sources */,
+				C008F1E41FBCA496009FD83C /* MyImageViewController.swift in Sources */,
 				C008F1B11FBC95F2009FD83C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
