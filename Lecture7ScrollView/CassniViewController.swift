@@ -9,7 +9,10 @@
 import UIKit
 
 class CassniViewController: UIViewController {
-
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        self.splitViewController?.delegate = self
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let url = DemoUrl.NasaUrlStrings[segue.identifier ?? ""]{
             if let imgVC = segue.destination.contents as? MyImageViewController{
@@ -20,7 +23,7 @@ class CassniViewController: UIViewController {
         
     }
     
-
+    
 }
 extension UIViewController{
     var contents: UIViewController{
@@ -32,3 +35,14 @@ extension UIViewController{
     }
 }
 
+extension UIViewController: UISplitViewControllerDelegate{
+    public func splitViewController(_ splitViewController: UISplitViewController, collapseSecondary secondaryViewController: UIViewController, onto primaryViewController: UIViewController) -> Bool{
+        if primaryViewController.contents == self{
+            if let ivc = secondaryViewController.contents as? MyImageViewController, ivc.imgUrl == nil{
+                return true
+            }
+        }
+        return false
+        
+    }
+}

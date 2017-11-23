@@ -72,12 +72,18 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PNM-s5-H27">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                             </scrollView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="b8z-ti-B6N">
+                                <rect key="frame" x="169" y="315" width="37" height="37"/>
+                                <color key="color" red="0.016804177310000001" green="0.19835099580000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="b8z-ti-B6N" firstAttribute="centerX" secondItem="Gtl-9X-mbW" secondAttribute="centerX" id="2hb-hv-UyH"/>
                             <constraint firstItem="PNM-s5-H27" firstAttribute="leading" secondItem="Gtl-9X-mbW" secondAttribute="leading" id="J68-U6-bVH"/>
                             <constraint firstItem="PNM-s5-H27" firstAttribute="bottom" secondItem="qjg-Qn-lGm" secondAttribute="bottom" id="PLr-17-iDA"/>
                             <constraint firstItem="PNM-s5-H27" firstAttribute="top" secondItem="qjg-Qn-lGm" secondAttribute="top" id="Te6-Yr-JVd"/>
+                            <constraint firstItem="b8z-ti-B6N" firstAttribute="centerY" secondItem="Gtl-9X-mbW" secondAttribute="centerY" id="Yvp-hq-OkY"/>
                             <constraint firstAttribute="trailing" secondItem="PNM-s5-H27" secondAttribute="trailing" id="pXL-Ic-shk"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qjg-Qn-lGm"/>
@@ -85,6 +91,7 @@
                     <navigationItem key="navigationItem" id="euo-TO-FN0"/>
                     <connections>
                         <outlet property="scrollView" destination="PNM-s5-H27" id="mDn-Q9-FzT"/>
+                        <outlet property="spinner" destination="b8z-ti-B6N" id="hY3-M0-S1r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gMu-YW-q0x" userLabel="First Responder" sceneMemberID="firstResponder"/>
